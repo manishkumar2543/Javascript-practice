@@ -127,18 +127,161 @@
 
 // Write a function to check if a number is prime or not.📢
 
-function PrimNum(num){
-    if(num<1){
-        return false
-    }
-    for(let i=2; i<num; i++){
-        if(num % i==0){
-            return false;
-        }
-    }
-    return true
-}
-console.log(PrimNum(5));
-console.log(PrimNum(6))
+// function PrimNum(num){
+//     if(num<1){
+//         return false
+//     }
+//     for(let i=2; i<num; i++){
+//         if(num % i==0){
+//             return false;
+//         }
+//     }
+//     return true
+// }
+// console.log(PrimNum(5));
+// console.log(PrimNum(6))
+
+
+
+//                        📅 Day-2 JavaScript Challenge
+//                             🔟 Core Questions
+
+// Write a program to print the multiplication table of a given number (e.g., 5).
+
+// Write a function to check if a string is a palindrome.
+
+// Write a function that takes an array and returns the smallest number.
+
+// Write a program to calculate the sum of digits of a number (e.g., 123 → 6).
+
+// Write a program to reverse a number (e.g., 123 → 321).
+
+// Write a program to count vowels in a string.
+
+// Write a program to merge two arrays and remove duplicates.
+
+// Write a program to find the maximum and minimum in an array using Math.max() and Math.min().
+
+// Write a program to check if a character is a vowel or consonant.
+
+// Write a program to find the second largest number in an array.
+
+
+
+// Write a program to print the multiplication table of a given number (e.g., 5).👈
+
+// function multiplication(num){
+//     for(let i= 1; i<=10; i++){
+//         console.log(`${num}x${i}=${num*i}`)
+//     }
+// }
+// console.log(multiplication(5))
+
+// Write a function to check if a string is a palindrome.👈
+
+// function palindrome(str){
+//     let reverse="";
+//     for(let i=str.length -1; i>=0; i--){
+//         reverse+=str[i];
+//     }
+//     return str === reverse;
+// }
+// console.log(palindrome("hel"))
+// console.log(palindrome("level"))
+// console.log(palindrome("level"));
+
+    // Write a function that takes an array and returns the smallest number.👈👈
+    // function smallest(arry){
+    //     let smallestNum=arry[0];
+    //     for(let i=1; i<arry.length; i++){
+    //         if(arry[i] < smallestNum){
+    //             smallestNum=arry[i]
+    //         }
+    //     }   
+    //     return smallestNum
+    // }
+    // console.log(smallest([10,0,20,4,6,1]))
+
+    // Write a program to calculate the sum of digits of a number (e.g., 123 → 6).
+
+//     function sumof(num){
+//         let sum=0;
+//         while(num>0){
+//             let digit= num%10;
+//             sum+=digit;
+//              num= Math.floor(num/10)
+//         }
+//        return sum
+//     }
+// console.log(sumof(123))
+// console.log(sumof(432))
+
+// // Write a program to reverse a number (e.g., 123 → 321).👈
+
+// function ReverseNum(num){
+//     let rev="";
+//     for(let i=num.length-1; i>=0; i--){
+//         rev+=num[i];
+
+//     }
+//     return rev
+// }
+// console.log(ReverseString(1,2,3))
+// console.log(ReverseString("Manish"))
+
+    // // Write a program to count vowels in a string.👈
+    // function Vowels(str){
+    //     let count=0;
+    //     for(let i=0; i<str.length; i++){
+    //         if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u"){
+    //             count++;
+    //         }
+                
+    //     }
+    //     return count;
+    // }
+    // console.log(Vowels("Manish"))
+
+
+    // Write a program to merge two arrays and remove duplicates.👈
+
+//     let arr=[1,2,3];
+//     let arr2=[,4,5,6];
+//    let merge= [...arr, ...arr2];
+//    let unique= [...new Set(merge)]
+//    console.log(unique)
+
+// Write a program to find the maximum and minimum in an array using Math.max() and Math.min().
+
+// let arr= [22,44,55,14];
+// let mx= Math.max(...arr);
+// let min=Math.min(...arr);
+// console.log(`Max number= ${mx}`)
+// console.log(`min number= ${min}`)
+
+// // Write a program to check if a character is a vowel or consonant.👈
+// function VowelsandConso(str){
+//     for(let i=0; i<str.length; i++){
+//         if(str[i]==="a" || str[i]==="e" || str[i]==="o" || str[i]==="i" || str[i]==="u")
+//             console.log(`${str[i]}= vowels`)
+//         else{
+//             console.log(`${str[i]}= conso`)
+//         }
+        
+//     }
+    
+
+// }
+// VowelsandConso("helo")
+
+
+
+// Write a program to find the second largest number in an array.👈
+
+let arr=[1,2,3,4]
+let arr2=arr.sort(function(a,b){
+    return b-a
+})
+console.log(arr2[1])
 
 
