@@ -900,3 +900,99 @@
 //     return freq;
 // }
 // console.log(frequency("Manish kumar"))
+
+
+// Find the first non-repeating character in a string.
+// function firstNonRepeatingChar(str){
+//     let charCount={};
+//     for(let i=0; i<str.length; i++){
+//         let char=str[i];
+//         if(char !== " "){
+//             if(charCount[char]){
+//                 charCount[char]++;
+//             }
+//             else{
+//                 charCount[char]=1;
+//             }
+//         }
+//     }
+//     for(let i=0; i<str.length; i++){
+//         let char=str[i];
+//         if(charCount[char]===1){
+//             return char;
+
+//         }
+//     }
+//     return null;
+// }
+// console.log(firstNonRepeatingChar("swiss"))
+// console.log(firstNonRepeatingChar("manish kumar"))
+
+
+
+// Merge two objects into one.
+
+// let obje={a:1, b:2};
+// let obje2={c:3, d:4};
+// let merged={...obje, ...obje2};
+// console.log(merged)
+
+
+// function mergeObjects(obj1, obj2){
+//     let merged={};
+//     for(let key in obj1){
+//         merged[key]=obj1[key];
+
+//     }
+//     for(let key in obj2){
+//         merged[key]=obj2[key];
+
+//     }
+//     return merged;
+// }
+// let obje={a:1, b:2};
+// let obje2={c:3, d:4};
+// console.log(mergeObjects(obje, obje2))
+
+// function mergeObjects(obj1, obj2){
+//     return {...obj1, ...obj2};
+// }
+// let obj1={a:1, b:2};
+// let obj2={c:3, d:4};
+// console.log(mergeObjects(obj1, obj2))
+
+
+// // Write a program to sort the keys of an object.
+// // let obj={b:2, a:1, d:4, c:3};
+// // let sortedKeys= Object.keys(obj).sort();
+// // let sortedObj={};
+// // for(let key of sortedKeys){
+// //     sortedObj[key]=obj[key];
+// // }
+// // console.log(sortedObj);
+
+// function sortObjectKeys(obj){
+//     let sortedKeys= Object.keys(obj).sort();
+//     let sortedObj={};
+//     for(let key of sortedKeys){
+//         sortedObj[key]=obj[key];
+//     }
+//     return sortedObj;
+// }
+// let obj={b:2, a:1, d:4, c:3};
+// console.log(sortObjectKeys(obj));
+
+
+// 1️⃣ Reverse an array without using reverse()
+function ReverseinAarry(arry){
+    let reverse=[];
+    for(let i=arry.length-1; i>=0; i--){
+        if(arry[i]){
+            reverse.push(arry[i]);
+
+        }
+      
+    }
+    return reverse;
+}
+console.log(ReverseinAarry([1,2,3,4,5]))
