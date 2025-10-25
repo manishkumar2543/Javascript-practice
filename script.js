@@ -983,16 +983,73 @@
 // console.log(sortObjectKeys(obj));
 
 
-// 1️⃣ Reverse an array without using reverse()
-function ReverseinAarry(arry){
-    let reverse=[];
-    for(let i=arry.length-1; i>=0; i--){
-        if(arry[i]){
-            reverse.push(arry[i]);
+// // 1️⃣ Reverse an array without using reverse()
+// function ReverseinAarry(arry){
+//     let reverse=[];
+//     for(let i=arry.length-1; i>=0; i--){
+//         if(arry[i]){
+//             reverse.push(arry[i]);
 
-        }
+//         }
       
-    }
-    return reverse;
-}
-console.log(ReverseinAarry([1,2,3,4,5]))
+//     }
+//     return reverse;
+// }
+// console.log(ReverseinAarry([1,2,3,4,5]))
+
+
+// // 2️⃣ Find the second smallest number in an array
+
+// // let arr=[5,1,3,2,4];
+// // let sorted=arr.sort(function(a,b){
+// //     return a-b;
+// // });
+// // console.log(sorted[1]);
+
+// function secondSmallest(arry){
+//     let first=Infinity;
+//     let second=Infinity;
+//     for(let i=0; i<arry.length; i++){
+//         if(arry[i] < first){
+//             second=first;
+//             first=arry[i];
+
+//         }
+//         else if(arry[i] < second && arry[i] !== first){
+//             second=arry[i];
+
+//         }
+
+        
+//     }
+//     return second;
+// }
+// console.log(secondSmallest([5,1,3,2,4]))
+
+// // 3️⃣ Capitalize first letter of each word in a string
+
+// function capitalizeWords(str){
+//    return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+// }
+// const mystring="hello world from javascript";
+// const titleCasedString =capitalizeWords(mystring);
+// console.log(titleCasedString);
+
+
+// function PerfectNum(num){
+//     let sum=0;
+//     for(let i=1; i<=num/2; i++){
+//         if(num % i ===0){
+//             sum+=i;
+
+//         }
+//     }
+//    if(sum === num){
+//         return `${num} is a perfect number`;
+//    }
+//    else{
+//     return `${num} is not a perfect number`;
+//    }
+
+// }
+// console.log(PerfectNum(6))
