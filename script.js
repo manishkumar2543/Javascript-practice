@@ -900,3 +900,287 @@
 //     return freq;
 // }
 // console.log(frequency("Manish kumar"))
+
+
+// Find the first non-repeating character in a string.
+// function firstNonRepeatingChar(str){
+//     let charCount={};
+//     for(let i=0; i<str.length; i++){
+//         let char=str[i];
+//         if(char !== " "){
+//             if(charCount[char]){
+//                 charCount[char]++;
+//             }
+//             else{
+//                 charCount[char]=1;
+//             }
+//         }
+//     }
+//     for(let i=0; i<str.length; i++){
+//         let char=str[i];
+//         if(charCount[char]===1){
+//             return char;
+
+//         }
+//     }
+//     return null;
+// }
+// console.log(firstNonRepeatingChar("swiss"))
+// console.log(firstNonRepeatingChar("manish kumar"))
+
+
+
+// Merge two objects into one.
+
+// let obje={a:1, b:2};
+// let obje2={c:3, d:4};
+// let merged={...obje, ...obje2};
+// console.log(merged)
+
+
+// function mergeObjects(obj1, obj2){
+//     let merged={};
+//     for(let key in obj1){
+//         merged[key]=obj1[key];
+
+//     }
+//     for(let key in obj2){
+//         merged[key]=obj2[key];
+
+//     }
+//     return merged;
+// }
+// let obje={a:1, b:2};
+// let obje2={c:3, d:4};
+// console.log(mergeObjects(obje, obje2))
+
+// function mergeObjects(obj1, obj2){
+//     return {...obj1, ...obj2};
+// }
+// let obj1={a:1, b:2};
+// let obj2={c:3, d:4};
+// console.log(mergeObjects(obj1, obj2))
+
+
+// // Write a program to sort the keys of an object.
+// // let obj={b:2, a:1, d:4, c:3};
+// // let sortedKeys= Object.keys(obj).sort();
+// // let sortedObj={};
+// // for(let key of sortedKeys){
+// //     sortedObj[key]=obj[key];
+// // }
+// // console.log(sortedObj);
+
+// function sortObjectKeys(obj){
+//     let sortedKeys= Object.keys(obj).sort();
+//     let sortedObj={};
+//     for(let key of sortedKeys){
+//         sortedObj[key]=obj[key];
+//     }
+//     return sortedObj;
+// }
+// let obj={b:2, a:1, d:4, c:3};
+// console.log(sortObjectKeys(obj));
+
+
+// // 1️⃣ Reverse an array without using reverse()
+// function ReverseinAarry(arry){
+//     let reverse=[];
+//     for(let i=arry.length-1; i>=0; i--){
+//         if(arry[i]){
+//             reverse.push(arry[i]);
+
+//         }
+      
+//     }
+//     return reverse;
+// }
+// console.log(ReverseinAarry([1,2,3,4,5]))
+
+
+// // 2️⃣ Find the second smallest number in an array
+
+// // let arr=[5,1,3,2,4];
+// // let sorted=arr.sort(function(a,b){
+// //     return a-b;
+// // });
+// // console.log(sorted[1]);
+
+// function secondSmallest(arry){
+//     let first=Infinity;
+//     let second=Infinity;
+//     for(let i=0; i<arry.length; i++){
+//         if(arry[i] < first){
+//             second=first;
+//             first=arry[i];
+
+//         }
+//         else if(arry[i] < second && arry[i] !== first){
+//             second=arry[i];
+
+//         }
+
+        
+//     }
+//     return second;
+// }
+// console.log(secondSmallest([5,1,3,2,4]))
+
+// // 3️⃣ Capitalize first letter of each word in a string
+
+// function capitalizeWords(str){
+//    return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+// }
+// const mystring="hello world from javascript";
+// const titleCasedString =capitalizeWords(mystring);
+// console.log(titleCasedString);
+
+
+// function PerfectNum(num){
+//     let sum=0;
+//     for(let i=1; i<=num/2; i++){
+//         if(num % i ===0){
+//             sum+=i;
+
+//         }
+//     }
+//    if(sum === num){
+//         return `${num} is a perfect number`;
+//    }
+//    else{
+//     return `${num} is not a perfect number`;
+//    }
+
+// }
+// console.log(PerfectNum(6))
+
+
+
+// 5️⃣ Flatten a nested array (one level)
+// let arr=[1,[2,3],[4,5]];
+// let arr2=arr.flat();
+// console.log(arr2)
+
+// function flattenArray(arry){
+//     arry.map(val=>{
+//         if(Array.isArray(val)){
+//             flattenArray(val);
+
+//         }
+//         else{
+//             console.log(val)
+//         }
+//     })
+
+
+// }
+// flattenArray([1,[2,3],[4,5,[6,7]]])
+
+
+
+
+// function FalsyValue(arry){
+//     let cleaner=[];
+//    arry.filter(function(val){
+//     if(val){
+//         cleaner.push(val)
+        
+//     }
+
+//    });
+//    console.log(cleaner)
+// }
+// FalsyValue([0, 1, false, 2, '', 3, null, undefined, 'Manish']);
+
+
+
+// // 7️⃣ Convert an object into an array of key-value pairs
+
+//     let obj={
+//         name:"Manish",
+//         age:12,
+//         Roll:20,
+
+//     }
+//     Object.entries(obj).forEach(([Key,value])=>{
+//         console.log(`${Key} : ${value}`)
+//     })
+
+// 8️⃣ Count the number of words in a string
+
+// let str="Hello world from javascript";
+// let word=str.split(" ").length;
+// console.log(word)
+
+// function CountWords(str){
+//     return str.split(" ").length;
+// }
+// console.log(CountWords("Hello world from javascript"))
+
+// filter use word
+// function CountWords(str){
+//     let words=str.split(" ");
+//     let count=0;
+//     words.filter(function(val){
+//         if(val!==""){
+//             count++;
+//         }
+//     });
+//     return count;
+// }
+// console.log(CountWords(" Hello   world from   javascript "))
+
+
+// 9️⃣ Check if a string is a pangram (contains all letters a-z)
+
+// function pangram(str){
+//     let Alpha="abcdefghijklmnopqrstuvwxyz";
+//     str=str.toLowerCase();
+//     for(let i=0; i<Alpha.length; i++){
+//         if(!str.includes(Alpha[i])){
+//             return false;
+
+//         }
+//     }
+//     return true;
+
+// }
+// console.log(pangram("The quick brown fox jumps over the lazy dog"))
+// console.log(pangram("Hello world"))
+
+
+
+// 🔟 Find all prime numbers in an array
+// function Primefind(arr){
+//     let primes=[];
+//     arr.forEach((val)=>{
+//         if(val > 1){
+//             let isPrime=true;
+//             for(let i=2; i<=Math.sqrt(val); i++){
+//                 if(val % i==0){
+//                     isPrime=false;
+//                     break;
+//                 }
+
+//             }
+//             if(isPrime){
+//                 primes.push(val);
+//             }
+
+//         }
+        
+//     })
+//     return primes;
+// }
+// console.log(Primefind([1,2,3,4,5,6,7,8,9,10,11,12,13]))
+
+// const Primefind = arr => 
+//     arr.filter(val => {
+//         if(val <= 1) return false; // 1 या उससे छोटे skip
+//         for(let i = 2; i <= Math.sqrt(val); i++){
+//             if(val % i === 0) return false;
+//         }
+//         return true;
+//     });
+
+// console.log(Primefind([3 ,4,5,6,7,8,9,10,11,12,13]));
