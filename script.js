@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // 📅 Day-2 Challenge
 // 🔹 Core Questions (10)
 
@@ -1185,7 +1185,7 @@
 //     });
 
 // console.log(Primefind([3 ,4,5,6,7,8,9,10,11,12,13]));
-=======
+
 // 📅 Day-2 Challenge
 // 🔹 Core Questions (10)
 
@@ -2241,4 +2241,61 @@
 
 // }
 // console.log(PerfectNum(6))
->>>>>>> 951d0d31d82deba82631572d495c5f10ad7239f8
+
+// ✅ 10 Smart Logic Questions (DSA Start Feel Hoga)
+
+// 1️⃣ Check if two strings are same after reversing
+// function ReverseStr(str){
+//     let rev=``;
+//     for(let i=str.length-1; i>=0; i--){
+//         if(str[i]){
+//             rev+=str[i];
+//         }
+//     }
+//     return rev;
+// }
+// console.log(ReverseStr("abc"))
+
+
+// function Reversest(str1){
+//     return str1.split(``).reverse().join(``);
+// }
+// console.log(Reversest("helo"))
+
+// ✅ 2️⃣ Count vowels in a string
+// function CountVowls(str){
+//     let count=0;
+//     str.UpperCase();
+//     for(let i=0; i<str.length; i++){
+//         if(str[i]===`a`|| str[i]===`e` || str[i]===`i` || str[i]===`o` || str[i]===`u`){
+//             count ++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(CountVowls("manish"))
+
+
+// function vowel(str){
+//     let count=0;
+//     for(let char of str){
+//         if(`aeiou`.includes(char)){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// console.log(vowel("manish"))
+
+// ✅ 4️⃣ Return only positive numbers from an array
+// [-4, 3, -2, 7, 0] → [3,7]
+function postiveNum(arr){
+    let result=[];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]>0){
+            result.push(arr[i])
+        } 
+    }
+    return result;
+}
+console.log(postiveNum([-4, 3, -2, 7, 0]))
