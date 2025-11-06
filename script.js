@@ -2289,13 +2289,147 @@
 
 // ✅ 4️⃣ Return only positive numbers from an array
 // [-4, 3, -2, 7, 0] → [3,7]
-function postiveNum(arr){
-    let result=[];
-    for(let i=0; i<arr.length; i++){
-        if(arr[i]>0){
-            result.push(arr[i])
-        } 
-    }
-    return result;
-}
-console.log(postiveNum([-4, 3, -2, 7, 0]))
+// function postiveNum(arr){
+//     let result=[];
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i]>0){
+//             result.push(arr[i])
+//         } 
+//     }
+//     return result;
+// }
+// console.log(postiveNum([-4, 3, -2, 7, 0]))
+
+
+// ✅ 5️⃣ Check if array is sorted (in ascending order)
+
+// [1,2,3,4] → true
+// [1,3,2] → false
+
+// let arr=[1,2,3,4];
+// let arr2=arr.sort((a,b)=>{
+//     return b-a;
+// })
+// console.log(arr2)
+
+// function acc(arr){
+//    return arr.sort((a,b)=>{
+//         return a-b
+//    })
+// }
+// console.log(acc([3,2,1]))
+
+
+// const number=[1,2,2,3,4,4,5];
+// const unqNumber=[...new Set(number)];
+// console.log(unqNumber)
+
+// 1️⃣ Remove duplicate elements from an array
+// function double(arr){
+//     let unique=[];
+//     for(let i=0; i<arr.length; i++){
+//         if(!unique.includes(arr[i])){
+//             unique.push(arr[i])
+//         }
+//     }
+//     return unique
+// }
+// console.log(double([2,3,3,5,2,7]))
+
+// 2️⃣ Find second largest number (without sorting)
+
+// function Secoundlargest(arr){
+//     let largest=-Infinity;
+//     let Seclargest=-Infinity;
+
+//     for(let i=0; i<arr.length; i++){
+//         let num=arr[i];
+//         if(num > largest){
+//             Seclargest=largest;
+//             largest=num;
+//         }
+//         else if(num > Seclargest &&  num < largest){
+//             Seclargest=num;
+//         }
+//     }
+//     return Seclargest;
+
+// }
+// console.log(Secoundlargest([10, 22, 5, 90, 67, 90]))
+// console.log(Secoundlargest([1,2,3,4]))
+
+
+
+// function Findunq(arr){
+//     let unique=[];
+//     for(let i= 0; i<arr.length; i++){
+//         if(!unique.includes(arr[i])){
+//             unique.push(arr[i])
+//         }
+//     }
+//     return unique
+
+// }
+// console.log(Findunq([1,2,3,3,4,5]))
+
+
+// 3️⃣ Count words in a sentence
+
+// function CountWords(str){
+//     return str.trim().split(/\s+/).length;
+// }
+// console.log(CountWords("i  love   you"))
+
+
+
+// function Menual(str){
+//     let result ="";
+//     for(let i=0; i<str.length; i++){
+// Step                  	Explanation
+// charCodeAt(i)	character ka ASCII code nikalta hai
+
+//         let charCode=str.charCodeAt(i);
+//         if(charCode >= 97 && charCode <= 122){
+//             result+=String.fromCharCode(charCode-32);
+//         }
+//         else{
+//             result+=str.charAt(i);
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(Menual("helo world"))
+
+// function Menual(str){
+//     let result="";
+//     for(let i=0; i<str.length; i++){
+//         let charCode=str.charCodeAt(i);
+
+//         if(charCode >= 65 && charCode <= 90){
+//             result+=String.fromCharCode(charCode +32)
+//         }
+       
+//         else{
+//             result+=str.charCodeAt(i)
+//         }
+//     }
+//     return result;
+// }
+// console.log(Menual("HELO  "))
+
+// 5️⃣ Check Palindrome String
+
+// "level" → yes
+// "hello" → no
+
+// function Palindrome(str){
+//     let reverse="";
+//     for(let i=str.length-1; i>=0; i--){
+//       reverse+=str[i];
+//     }
+//     return str ===  reverse;
+// }
+// // console.log(Palindrome(["helo"]))
+// console.log(Palindrome("level"))
+// console.log(Palindrome("helo"))
