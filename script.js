@@ -2433,3 +2433,31 @@
 // // console.log(Palindrome(["helo"]))
 // console.log(Palindrome("level"))
 // console.log(Palindrome("helo"))
+
+
+// 7️⃣ Find frequency of each number in an array
+// [1,1,2,3,3,3,2]
+
+
+// function EvenCount(num){
+//     let count=0;
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] % 2 === 0){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(EvenCount([1,4,6,7,10]))
+
+
+function OddAdd(num){
+    let sum=0;
+    for(let i=0; i<num.length; i++){
+        if(num[i] % 2!==0){
+            sum+=num[i];
+        }
+    }
+    return sum;
+}
+console.log(OddAdd([1, 4, 6, 7, 10, 9]))
