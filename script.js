@@ -2451,13 +2451,72 @@
 // console.log(EvenCount([1,4,6,7,10]))
 
 
-function OddAdd(num){
-    let sum=0;
-    for(let i=0; i<num.length; i++){
-        if(num[i] % 2!==0){
-            sum+=num[i];
-        }
-    }
-    return sum;
-}
-console.log(OddAdd([1, 4, 6, 7, 10, 9]))
+// function OddAdd(num){
+//     let sum=0;
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] % 2!==0){
+//             sum+=num[i];
+//         }
+//     }
+//     return sum;
+// }
+// console.log(OddAdd([1, 4, 6, 7, 10, 9]))
+
+
+// function greaterNum(num){
+//     let count=0;
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] > 10){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(greaterNum([5, 12, 8, 20, 3, 25]))
+
+
+// function divisible(num){
+//     let count=0;
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] % 2===0 && num[i] % 5 ===0){
+//             count++;
+//         }
+//     }
+//     return count
+// }
+// console.log(divisible([10, 5, 20, 30, 7, 40]));
+
+
+// function isPrime(num){
+//     if(num<=1) return false;
+//     for(let i=2; i<num; i++){
+//         if(num % i ===0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// function PrimeCount(arr){
+//     let count =0;
+//     for(let i=0; i<arr.length; i++){
+//         if(isPrime(arr[i])){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(PrimeCount([2, 4, 5, 6, 7, 9, 11]))
+
+
+
+// function isArray(arr1,arr2){
+//     if(arr1.length !== arr2.length) return false
+//     for(let i=0; i<arr1.length; i++){
+//         if(arr1[i] !== arr2[i]){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(isArray([1,2,3],[6,7,9]))
+// console.log(isArray([1,2,3],[1,2,3]))
