@@ -2520,3 +2520,151 @@
 // }
 // console.log(isArray([1,2,3],[6,7,9]))
 // console.log(isArray([1,2,3],[1,2,3]))
+
+
+// function Dublicate(arr1,arr2){
+//     let result =[];
+//     for(let i=0; i<arr1.length; i++){
+//         for(let j=0; j<arr2.length; j++){
+//             if(arr1[i] === arr2[j]){
+//                 result.push(arr1[i])
+//             }
+//         }
+//     }
+//     return result
+// }
+// console.log(Dublicate([1,2,3,4],[4,3,5,1]))
+
+
+// function FindDbl(arr){
+//     let result=[];
+//     for(let i=0; i<arr.length; i++){
+//         for(let j=i+1; j<arr.length; j++){
+//             if(arr[i] === arr[j] && !result.includes(arr[i])){
+//                 result.push(arr[i]);
+            
+//             }   
+//         }
+//     }
+//     return result
+// }
+// console.log(FindDbl([1,2,2,3,3,3,4]))
+
+
+
+// function SomeofDigit(num){
+//     let sum=0;
+//     while(num>0){
+//         let digit=num % 10;
+//         sum+=digit;
+//         num=Math.floor(num/10);
+//     }
+//     return sum
+// }
+// console.log(SomeofDigit(153))
+// console.log(SomeofDigit(159))
+
+// function someRev(num){
+//     let reverse=0;
+//     while(num>0){
+//         let digit=num % 10;
+//         reverse= reverse * 10 + digit;
+//         num= Math.floor(num/10);
+//     }
+//     return reverse;
+// }
+// console.log(someRev(154));
+
+
+// function checkCase(str){
+//     let Upper=0;
+//     let lower=0;
+//     for(let i=0; i<str.length; i++){
+//         let code= str.charCodeAt(i);
+//         if(code >= 65 && code <=90){
+//             Upper++;
+//         }
+//         else if(code >= 97 && code <= 122){
+//             lower++;
+//         }
+//     }
+//     return {Upper ,lower}
+// }
+// console.log(checkCase("Hello"))
+
+//1. An array is given. Count how many even number are there.📢
+
+// function CountEven(num){
+//     let count=0;
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] % 2 ===0){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(CountEven([1,2,3,4,5,6]))
+
+// Q2: Return numbers greater than 10 from array
+
+// function greaterNum(num){
+//     let greater=[];
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] > 10){
+//             greater.push(num[i])
+//         }
+//     }
+//     return greater;
+// }
+// console.log(greaterNum([8,9,10,20,25,30]))
+
+// Q3: Find smallest number in array
+
+// let num= [5, 12, 8, 130, 44];
+// let sortNum=num.sort((a,b)=> a-b);
+// console.log(sortNum[0])
+
+// function findsmallest(num){
+//     let sortNum=num.sort((a,b)=> a-b);
+//     console.log(sortNum[0])
+// }
+// findsmallest([20, 12, 8, 130, 44])
+
+// function findsmallest(num){
+//     let smallestNum=num[0];
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] < smallestNum){
+//             smallestNum=num[i];
+//         }
+//     }
+//     return smallestNum
+// }
+// console.log(findsmallest([20, 12, 8, 130, 44]))
+
+// function ReverseStr(str){
+//     let reverse="";
+//     for(let i=str.length-1; i>=0; i--){
+//         reverse+=str[i]
+//     }
+//     return reverse
+// }
+// console.log(ReverseStr("hello"))
+
+// Q5: Check if a number is palindrome
+// function CheckPalindrome(num){
+//     num=num.toString();
+//     let rev= "";
+//     for(let i=num.length-1; i>=0; i--){
+//         rev+=num[i];
+
+       
+//     }
+//    if(num===rev){
+//     return true;
+//    }
+//    else{
+//     return false;
+//    }
+// }
+// console.log(CheckPalindrome([123]))
+// console.log(CheckPalindrome([121]))
