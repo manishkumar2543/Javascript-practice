@@ -2668,3 +2668,21 @@
 // }
 // console.log(CheckPalindrome([123]))
 // console.log(CheckPalindrome([121]))
+
+// Q1: Find all pairs in an array whose sum is equal to a given number
+
+// function PairsSum(num){
+//     let result=[];
+//     let target=6;
+//     for(let i=0; i<num.length; i++){
+//         for(let j=i+1; j<num.length; j++ ){
+//             if(num[i] + num[j] === target){
+//                 result.push([num[i], num[j]])
+//             }
+//         }
+//     }
+//     return result;
+// }
+// console.log(PairsSum([1, 2, 3, 4, 5]))
+
+
