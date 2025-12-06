@@ -348,3 +348,8 @@
 // console.log(CountDigits(12345))    
 
 
+// Q31: Sum of array using recursion.
+function sumArr(arr, i=0){
+        return i === arr.length? 0: arr[i] + sumArr(arr,i+1)
+}
+console.log(sumArr([2,5,8,10]))
