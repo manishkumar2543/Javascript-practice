@@ -349,7 +349,17 @@
 
 
 // Q31: Sum of array using recursion.
-function sumArr(arr, i=0){
-        return i === arr.length? 0: arr[i] + sumArr(arr,i+1)
+// function sumArr(arr, i=0){
+//         return i === arr.length? 0: arr[i] + sumArr(arr,i+1)
+// }
+// console.log(sumArr([2,5,8,10]))
+
+// Q32: Reverse string using recursion.
+
+function reverseStr(str) {
+    if (str.length === 0) return "";   // base condition
+
+    return reverseStr(str.slice(1)) + str[0];
 }
-console.log(sumArr([2,5,8,10]))
+
+console.log(reverseStr("Manish"));  // hsinaM
